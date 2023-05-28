@@ -4,17 +4,22 @@ from food.models import Food, LikeDislike, Comment
 
 
 class FoodSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Food
-        fields = (
+        fields = [
             'name',
             'slug',
             'price',
             'composition',
             'image',
-            'category'
-        )
+            'category',
+            'likes',
+            'dislike',
+            'comment'
+        ]
         read_only_fields = ('id',)
+
 
 
 class LikeDislikeSerializer(serializers.Serializer):
@@ -26,3 +31,5 @@ class CommentSerializer(serializers.ModelSerializer):
         model = Comment
         fields = ('user', 'body', 'food')
         read_only_fields = ('id',)
+
+

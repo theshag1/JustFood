@@ -32,6 +32,9 @@ class Comment(models.Model):
     body = models.TextField()
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='comment')
 
+    def __str__(self):
+        return self.body
+
 
 class LikeDislike(models.Model):
     class Textchoices(models.TextChoices):
