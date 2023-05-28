@@ -2,14 +2,14 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Food, Comment, LIkeDislike
+from .models import Food, Comment, LikeDislike
 
 admin.site.register(Food)
 
 
-@admin.register(LIkeDislike)
+@admin.register(LikeDislike)
 class LIkeDislike(admin.ModelAdmin):
-    list_display = ['food', 'user', 'type']
+    list_display = ['user', 'food', 'type']
 
 
 @admin.register(Comment)

@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils.text import slugify
 
 
 # Create your models here.
@@ -15,10 +14,17 @@ class Food(models.Model):
     def __str__(self):
         return self.name
 
-    def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.name)
-            return super().save(*args, **kwargs)
+    @property
+    def likes(self):
+        return self.food_like_dislike.filter(type=LikeDislike.Textchoices.Like).count()
+
+    @property
+    def dislike(self):
+        return self.food_like_dislike.filter(type=LikeDislike.Textchoices.Dislike).count()
+
+    @property
+    def comment(self):
+        return self.comment.count()
 
 
 class Comment(models.Model):
@@ -27,10 +33,10 @@ class Comment(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='comment')
 
 
-class LIkeDislike(models.Model):
+class LikeDislike(models.Model):
     class Textchoices(models.TextChoices):
         Like = '+',
-        DIslike = '-'
+        Dislike = '-'
 
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='food_like_dislike')
     user = models.ForeignKey('users.User', on_delete=models.CASCADE, related_name='food_like_dislike')

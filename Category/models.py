@@ -11,15 +11,5 @@ class Category(models.Model):
     image = models.ImageField(null=False)
     position = models.IntegerField(default=1)
 
-    def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.title)
-            return super().save(*args, **kwargs)
-
     def __str__(self):
         return self.title
-
-    # def save(self, *args, **kwargs):
-    #     if not self.slug:
-    #         self.slug = slugify(self.title)
-    #     return super().save(*args, **kwargs)
