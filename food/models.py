@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 
 # Create your models here.
@@ -6,7 +7,7 @@ from django.db import models
 class Food(models.Model):
     name = models.CharField(max_length=1500, unique=True, null=False)
     slug = models.SlugField(unique=True, null=False)
-    price = models.BigIntegerField(null=False)
+    food_price = models.BigIntegerField(null=False)
     composition = models.CharField(max_length=1500)
     image = models.ImageField(null=False)
     category = models.ForeignKey('Category.Category', on_delete=models.CASCADE, related_name='food_category')
@@ -25,6 +26,11 @@ class Food(models.Model):
     @property
     def comment(self):
         return self.comment.count()
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+            return super().save(*args, **kwargs)
 
 
 class Comment(models.Model):

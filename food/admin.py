@@ -4,7 +4,10 @@ from django.contrib import admin
 
 from .models import Food, Comment, LikeDislike
 
-admin.site.register(Food)
+
+@admin.register(Food)
+class FoodAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(LikeDislike)

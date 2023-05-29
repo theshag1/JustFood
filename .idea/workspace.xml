@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just food comming soon !">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/justfood/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/justfood/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,20 +25,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -124,7 +129,9 @@
       <workItem from="1685258570295" duration="135000" />
       <workItem from="1685258772689" duration="1615000" />
       <workItem from="1685260427580" duration="731000" />
-      <workItem from="1685261318517" duration="5749000" />
+      <workItem from="1685261318517" duration="11136000" />
+      <workItem from="1685284472980" duration="4498000" />
+      <workItem from="1685355756016" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
@@ -140,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685263272344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="just food comming soon !">
+      <created>1685277542218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685277542218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="just food comming soon !">
+      <created>1685277846723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685277846723</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
