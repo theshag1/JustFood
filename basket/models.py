@@ -4,10 +4,14 @@ from django.db import models
 
 # Create your models here.
 class Basket(models.Model):
-    food = models.ForeignKey('food.Food', on_delete=models.CASCADE, related_name='oreder_basket')
+    food = models.ForeignKey('food.Food', on_delete=models.CASCADE, related_name='order_basket')
     price = models.BigIntegerField()
     amount = models.BigIntegerField()
     order_created = models.DateTimeField()
+    order_queue = models.ForeignKey('onlineQueue.Queue', on_delete=models.CASCADE, related_name='queue_order')
+
+    def __str__(self):
+        return f'{self.food} : {self.amount}'
 
     @property
     def amount_price(self):
@@ -16,6 +20,5 @@ class Basket(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.price:
-            if not self.price:
-                self.price = self.food.food_price
-                return super().save(*args, **kwargs)
+            self.price = self.food.food_price
+        return super().save(*args, **kwargs)
