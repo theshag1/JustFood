@@ -7,3 +7,4 @@ class QueueSerializer(serializers.ModelSerializer):
         model = Queue
         fields = ('queue', 'created_at', 'user', 'is_being_prepared')
         read_only_fields = ('id',)
+

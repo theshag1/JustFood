@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from rest_framework import generics, status
 from rest_framework.response import Response
@@ -28,3 +28,20 @@ class QueueAPIview(APIView):
         if serializers.is_valid(raise_exception=True):
             return Response(serializers.data, status=status.HTTP_201_CREATED)
         return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+class QueueDetialView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self, pk):
+        return get_object_or_404(Queue, id=pk)
+
+    def get(self , request , *args , **kwargs):
+        queryset = self.get_object(pk=self.kwargs.get('pk'))
+        serializers = QueueSerializer(queryset)
+        return Response(serializers.data)
+
+    def delete(self, request, *args, **kwargs):
+        queyset = self.get_object(pk=self.kwargs.get('pk'))
+        queyset.delete()
+        return Response(status=status.HTTP_202_ACCEPTED)
