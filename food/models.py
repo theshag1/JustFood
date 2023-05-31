@@ -51,6 +51,10 @@ class LikeDislike(models.Model):
     user = models.ForeignKey('users.User', on_delete=models.CASCADE, related_name='food_like_dislike')
     type = models.CharField(max_length=10, choices=Textchoices.choices)
 
+    @property
+    def food_name(self):
+        return self.food == Food.objects.filter(id=self.food.id)
+
     class Meta:
         unique_together = ['food', 'user']
 

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import FoodAPIview, FoodDetilView, LikeDislikeApiview, CommentView, CommentDetailView
+from .views import FoodAPIview, FoodDetilView, LikeDislikeApiview, CommentView, CommentDetailView , UserLikedFood
 
 urlpatterns = [
     path('', FoodAPIview.as_view(), name='food-view'),
@@ -8,4 +8,5 @@ urlpatterns = [
     path('comment/<int:pk>/', CommentDetailView.as_view(), name='food-comment-detil'),
     path('<int:pk>/like_dislike/', LikeDislikeApiview.as_view(), name='like_or_dislike'),
     path('<slug:slug>', FoodDetilView.as_view(), name='food-detail-view'),
+    path('likedfood/', UserLikedFood.as_view(), name='food-detail-view'),
 ]

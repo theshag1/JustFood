@@ -23,10 +23,17 @@ class LikeDislikeSerializer(serializers.Serializer):
     type = serializers.ChoiceField(choices=LikeDislike.Textchoices.choices)
 
 
+class UserLikeDislikeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LikeDislike
+        fields = (
+            'food',
+            'user',
+        )
+
+
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = ('user', 'body', 'food')
         read_only_fields = ('id',)
-
-

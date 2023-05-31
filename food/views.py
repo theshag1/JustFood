@@ -10,17 +10,17 @@ from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 from .models import Food, LikeDislike, Comment
-from .serializer import FoodSerializer, LikeDislikeSerializer, CommentSerializer
+from .serializer import FoodSerializer, LikeDislikeSerializer, CommentSerializer, UserLikeDislikeSerializer
 
 
 # Create your views here.
 
 
-class FoodAPIview(APIView):
-    def get(self, request, *args, **kwargs):
-        queryset = Food.objects.order_by()
-        serializer = FoodSerializer(queryset, many=True)
-        return Response(serializer.data)
+class FoodAPIview(generics.ListAPIView):
+    queryset = Food.objects.all()
+    serializer_class = FoodSerializer
+    filter_backends = (SearchFilter,)
+    search_fields = ('name',)
 
 
 class FoodDetilView(generics.ListAPIView):
@@ -63,3 +63,12 @@ class CommentView(generics.ListCreateAPIView):
 class CommentDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
+
+
+class UserLikedFood(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        queyset = LikeDislike.objects.filter(user=request.user)
+        serializer = UserLikeDislikeSerializer(queyset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
