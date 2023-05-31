@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#50] / [#100]">
-      <change afterPath="$PROJECT_DIR$/users/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/serializer.py" afterDir="false" />
+    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#55] / [#100]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
@@ -142,7 +139,7 @@
       <workItem from="1685431175389" duration="8034000" />
       <workItem from="1685452936220" duration="45000" />
       <workItem from="1685532190318" duration="937000" />
-      <workItem from="1685534087217" duration="4091000" />
+      <workItem from="1685534087217" duration="5373000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
@@ -228,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685532957978</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="just [#55] / [#100]">
+      <created>1685538394949</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685538394949</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +243,7 @@
     <MESSAGE value="just [#40] / [#100]" />
     <MESSAGE value="just [#45] / [#100]" />
     <MESSAGE value="just [#50] / [#100]" />
-    <option name="LAST_COMMIT_MESSAGE" value="just [#50] / [#100]" />
+    <MESSAGE value="just [#55] / [#100]" />
+    <option name="LAST_COMMIT_MESSAGE" value="just [#55] / [#100]" />
   </component>
 </project>

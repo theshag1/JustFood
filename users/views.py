@@ -1,11 +1,9 @@
-from django.shortcuts import render
-
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from users.models import User
-from .serializer import ProfileSerializer
+from .serializer import ProfileSerializer, UserRegister
 from rest_framework.permissions import IsAuthenticated
 
 
@@ -26,3 +24,9 @@ class ProfileApiView(APIView):
             return Response(serializers.data, status=status.HTTP_200_OK)
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
+
+class UserRegisterApiview(generics.CreateAPIView):
+    queryset = User.objects.all()
+
+    def get_serializer_class(self):
+        return UserRegister
