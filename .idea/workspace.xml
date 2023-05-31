@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#45] / [#100]">
+    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#50] / [#100]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineQueue/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineQueue/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineQueue/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineQueue/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineQueue/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineQueue/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineQueue/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineQueue/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/islomov_ibrohimjon/blog-api/javascript/javascript.js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/islomov_ibrohimjon/Projects/JustFood",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -136,7 +134,9 @@
       <workItem from="1685357333287" duration="228000" />
       <workItem from="1685361818945" duration="5900000" />
       <workItem from="1685380626500" duration="2226000" />
-      <workItem from="1685431175389" duration="7157000" />
+      <workItem from="1685431175389" duration="8034000" />
+      <workItem from="1685452936220" duration="45000" />
+      <workItem from="1685532190318" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685435064587</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="just [#50] / [#100]">
+      <created>1685438628213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685438628213</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +225,7 @@
     <MESSAGE value="just food comming soon !" />
     <MESSAGE value="just [#40] / [#100]" />
     <MESSAGE value="just [#45] / [#100]" />
-    <option name="LAST_COMMIT_MESSAGE" value="just [#45] / [#100]" />
+    <MESSAGE value="just [#50] / [#100]" />
+    <option name="LAST_COMMIT_MESSAGE" value="just [#50] / [#100]" />
   </component>
 </project>
