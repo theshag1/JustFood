@@ -30,3 +30,8 @@ class UserRegister(serializers.ModelSerializer):
 
         )
         read_only_fields = ('id',)
+
+
+class LoginSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField()

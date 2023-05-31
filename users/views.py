@@ -1,9 +1,10 @@
+from django.contrib.auth import authenticate
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from users.models import User
-from .serializer import ProfileSerializer, UserRegister
+from .serializer import ProfileSerializer, UserRegister, LoginSerializer
 from rest_framework.permissions import IsAuthenticated
 
 
@@ -30,3 +31,17 @@ class UserRegisterApiview(generics.CreateAPIView):
 
     def get_serializer_class(self):
         return UserRegister
+
+
+class LoginApiView(APIView):
+    def post(self, request, *args, **kwargs):
+        serializers = LoginSerializer(data=request.data)
+        serializers.is_valid(raise_exception=True)
+        username = serializers.validated_data.get('username')
+        password = serializers.validated_data.get('password')
+        user = User.objects.filter(username=username).first()
+        if user:
+            authenticate(request, password=password, username=username)
+            return Response(serializers.data)
+        else:
+            return Response({'detail': 'Please enter the correct username and password'})
