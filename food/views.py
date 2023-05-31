@@ -1,10 +1,13 @@
 from django.http import Http404
+from django_filters import OrderingFilter
+from django_filters.rest_framework import DjangoFilterBackend
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
+from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 from .models import Food, LikeDislike, Comment
 from .serializer import FoodSerializer, LikeDislikeSerializer, CommentSerializer
@@ -13,12 +16,14 @@ from .serializer import FoodSerializer, LikeDislikeSerializer, CommentSerializer
 # Create your views here.
 
 
-class FoodAPIview(generics.ListCreateAPIView):
-    queryset = Food.objects.all()
-    serializer_class = FoodSerializer
+class FoodAPIview(APIView):
+    def get(self, request, *args, **kwargs):
+        queryset = Food.objects.order_by()
+        serializer = FoodSerializer(queryset, many=True)
+        return Response(serializer.data)
 
 
-class FoodDetilView(generics.RetrieveUpdateDestroyAPIView):
+class FoodDetilView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
     queryset = Food.objects.all()
     lookup_field = 'slug'
@@ -58,4 +63,3 @@ class CommentView(generics.ListCreateAPIView):
 class CommentDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
-

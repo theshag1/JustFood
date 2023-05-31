@@ -9,12 +9,12 @@ class FoodSerializer(serializers.ModelSerializer):
         fields = [
             'name',
             'slug',
+            'food_price',
             'composition',
             'image',
             'category',
             'likes',
             'dislike',
-            'comment'
         ]
         read_only_fields = ('id', 'price')
 
@@ -28,3 +28,5 @@ class CommentSerializer(serializers.ModelSerializer):
         model = Comment
         fields = ('user', 'body', 'food')
         read_only_fields = ('id',)
+
+
