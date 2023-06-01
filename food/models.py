@@ -53,7 +53,7 @@ class LikeDislike(models.Model):
 
     @property
     def food_name(self):
-        return self.food == Food.objects.filter(id=self.food.id)
+        return self.food.name
 
     class Meta:
         unique_together = ['food', 'user']

@@ -3,7 +3,7 @@ from .models import Basket
 
 
 class BasketAdmin(admin.ModelAdmin):
-    list_display = ['food', 'price', 'amount', 'order_created']
+    list_display = ['food', 'price', 'amount', 'order_created', 'amount_price']
     readonly_fields = ['price']
 
     def save_model(self, request, obj, form, change):

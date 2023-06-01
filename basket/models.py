@@ -6,7 +6,7 @@ class Basket(models.Model):
     food = models.ForeignKey('food.Food', on_delete=models.CASCADE, related_name='order_basket')
     price = models.BigIntegerField()
     amount = models.BigIntegerField()
-    order_created = models.DateTimeField()
+    order_created = models.DateTimeField(auto_now=True)
     order_queue = models.ForeignKey('onlineQueue.Queue', on_delete=models.CASCADE, related_name='queue_order')
     parent = models.ForeignKey('self', on_delete=models.CASCADE, related_name='other_food')
 

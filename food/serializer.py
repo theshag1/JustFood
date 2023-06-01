@@ -27,8 +27,7 @@ class UserLikeDislikeSerializer(serializers.ModelSerializer):
     class Meta:
         model = LikeDislike
         fields = (
-            'food',
-            'user',
+            'food_name',
         )
 
 
