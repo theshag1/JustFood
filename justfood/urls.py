@@ -49,6 +49,7 @@ urlpatterns = [
     path('queue/', include('onlineQueue.urls')),
     path('category/', include('Category.urls')),
     path('user/', include('users.urls')),
+    path('pay/', include('OnlinePay.urls')),
     path('basket', include('basket.urls')),
 ]
 

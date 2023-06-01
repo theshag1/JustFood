@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#60] / [#100]">
+    <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="just [#63] / [#100]">
+      <change afterPath="$PROJECT_DIR$/OnlinePay/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlinePay/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Category/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Category/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Category/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/migrations/0002_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/justfood/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/justfood/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineQueue/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineQueue/migrations/0002_queue_is_being_prepared.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +160,9 @@
       <workItem from="1685562080189" duration="713000" />
       <workItem from="1685562899267" duration="398000" />
       <workItem from="1685563321008" duration="3169000" />
-      <workItem from="1685608578781" duration="6010000" />
+      <workItem from="1685608578781" duration="6033000" />
+      <workItem from="1685618469499" duration="2991000" />
+      <workItem from="1685633922329" duration="6776000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
@@ -271,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685566486980</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="just [#63] / [#100]">
+      <created>1685615935583</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685615935583</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +303,7 @@
     <MESSAGE value="just [#50] / [#100]" />
     <MESSAGE value="just [#55] / [#100]" />
     <MESSAGE value="just [#60] / [#100]" />
-    <option name="LAST_COMMIT_MESSAGE" value="just [#60] / [#100]" />
+    <MESSAGE value="just [#63] / [#100]" />
+    <option name="LAST_COMMIT_MESSAGE" value="just [#63] / [#100]" />
   </component>
 </project>
