@@ -50,7 +50,7 @@ urlpatterns = [
     path('category/', include('Category.urls')),
     path('user/', include('users.urls')),
     path('pay/', include('OnlinePay.urls')),
-    path('basket', include('basket.urls')),
+    path('basket/', include('basket.urls')),
 ]
 
 urlpatterns += swagger_urls

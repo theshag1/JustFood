@@ -8,7 +8,6 @@ class Basket(models.Model):
     amount = models.BigIntegerField()
     order_created = models.DateTimeField(auto_now=True)
     order_queue = models.ForeignKey('onlineQueue.Queue', on_delete=models.CASCADE, related_name='queue_order')
-    parent = models.ForeignKey('self', on_delete=models.CASCADE, related_name='other_food')
 
     def __str__(self):
         return f'{self.food} : {self.amount}'

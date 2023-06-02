@@ -10,7 +10,18 @@ from .serializers import BasketSerializer
 # Create your views here.
 
 
-class BasketApiView(generics.CreateAPIView):
+class BasketApiView(APIView):
     permission_classes = [IsAuthenticated]
-    queryset = Basket.objects.all()
-    serializer_class = BasketSerializer
+
+    def get(self, request, *args, **kwargs):
+        queryset = Basket.objects.all()
+        serializer = BasketSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def put(self, request, *args, **kwargs):
+        serializer = BasketSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            amount = serializer.validated_data
+            print(amount)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
