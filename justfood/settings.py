@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'modeltranslation',
     # local_app
     'OnlinePay',
-    'onlineQueue',
     'users',
     'Category',
     'food',

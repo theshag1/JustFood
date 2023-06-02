@@ -46,7 +46,6 @@ swagger_urls = [
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('food/', include('food.urls')),
-    path('queue/', include('onlineQueue.urls')),
     path('category/', include('Category.urls')),
     path('user/', include('users.urls')),
     path('pay/', include('OnlinePay.urls')),

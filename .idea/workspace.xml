@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="𝖙𝖗𝖆𝖓𝖘𝖑𝖆𝖙𝖎𝖔𝖓 𝖆𝖉𝖉">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/justfood/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/justfood/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,27 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/islomov_ibrohimjon/Projects/JustFood",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/islomov_ibrohimjon/Projects/JustFood&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -152,6 +148,7 @@
       <workItem from="1685633922329" duration="7359000" />
       <workItem from="1685695888454" duration="12552000" />
       <workItem from="1685722761558" duration="1439000" />
+      <workItem from="1685728093855" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
