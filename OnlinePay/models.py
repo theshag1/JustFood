@@ -8,7 +8,7 @@ from rest_framework.exceptions import ValidationError
 
 def validate_card_number(value):
     if not value.startswith(('8600', '9860',)):
-        raise ValidationError(_('Card number must start 8600 , 9860 ,\nPlease input correct Card number'))
+        raise ValidationError(_('Card number must start 8600 , 9860\nPlease input correct Card number'))
 
 
 class PayMethod(models.Model):
@@ -41,3 +41,6 @@ class PayMethod(models.Model):
     created_at = models.DateTimeField(auto_now=True)
     pay_amount = models.BigIntegerField()
     balance = models.BigIntegerField(null=True)
+
+    def __str__(self):
+        return f'{self.user}  :   {self.pay_amount}'

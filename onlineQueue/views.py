@@ -24,14 +24,13 @@ class UserallOrder(APIView):
         return Response(serializers.data, status=status.HTTP_200_OK)
 
 
-
 class QueueDetialView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get_object(self, pk):
         return get_object_or_404(Queue, id=pk)
 
-    def get(self , request , *args , **kwargs):
+    def get(self, request, *args, **kwargs):
         queryset = self.get_object(pk=self.kwargs.get('pk'))
         serializers = QueueSerializer(queryset)
         return Response(serializers.data)

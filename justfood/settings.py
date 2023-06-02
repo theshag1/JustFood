@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 import environ
 
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'payments',
+    'modeltranslation',
     # local_app
     'OnlinePay',
     'onlineQueue',
@@ -123,9 +125,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
-TIME_ZONE = 'UTC'
+LANGUAGES = (
+    ("uz", "Uzbek"),
+    ("en", "English"),
+)
+MODELTRANSLATION_LANGUAGES = ('uz', 'en')
+
+MODELTRANSLATION_TRANSLATION_FILES = (
+    'food.translation',
+)
+
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -148,4 +160,3 @@ PAYMENT_HOST = 'localhost:8000'
 
 # Whether to use TLS (HTTPS). If false, will use plain-text HTTP.
 # Defaults to ``not settings.DEBUG``.
-PAYMENT_USES_SSL = False
