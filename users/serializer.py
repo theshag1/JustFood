@@ -9,6 +9,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = [
             'username',
             'email',
+            'balance',
             'first_name',
             'last_name',
             'age'

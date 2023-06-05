@@ -5,7 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbafb422-7061-4009-a04f-c0aad05f16f2" name="Changes" comment="𝖙𝖗𝖆𝖓𝖘𝖑𝖆𝖙𝖎𝖔𝖓 𝖆𝖉𝖉">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0bb4bb4-f0fb-4819-8454-49006ec4a4cb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0bb4bb4-f0fb-4819-8454-49006ec4a4cb/storage_v2/_src_/database/juust_food.sp9i8g.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0bb4bb4-f0fb-4819-8454-49006ec4a4cb/storage_v2/_src_/database/juust_food.sp9i8g/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0bb4bb4-f0fb-4819-8454-49006ec4a4cb/storage_v2/_src_/database/juust_food.sp9i8g/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0bb4bb4-f0fb-4819-8454-49006ec4a4cb/storage_v2/_src_/database/juust_food.sp9i8g/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/migrations/0003_basket_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food/migrations/0003_food_composition_en_food_composition_uz_food_name_en_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/Screenshot_from_2023-06-01_14-11-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/Screenshot_from_2023-06-02_15-37-42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay_action/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/AUTHORS.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/django_modeltranslation-0.18.10.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/management/commands/loaddata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/management/commands/sync_translation_fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/management/commands/update_translation_fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/static/modeltranslation/css/tabbed_translation_fields.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/static/modeltranslation/js/clearable_inputs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/static/modeltranslation/js/force_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/static/modeltranslation/js/tabbed_translation_fields.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/thread_context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/translator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/modeltranslation/widgets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlinePay/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlinePay/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basket/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/justfood/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/justfood/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/justfood/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/justfood/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +137,29 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ip">
+    <configuration name="ip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="JustFood" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" singleton="false" nameIsGenerated="true">
       <module name="JustFood" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,6 +194,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ip" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -149,6 +236,9 @@
       <workItem from="1685695888454" duration="12552000" />
       <workItem from="1685722761558" duration="1439000" />
       <workItem from="1685728093855" duration="373000" />
+      <workItem from="1685802923172" duration="1959000" />
+      <workItem from="1685942600918" duration="1000" />
+      <workItem from="1685944367076" duration="4907000" />
     </task>
     <task id="LOCAL-00001" summary="just food comming soon !">
       <created>1685194426901</created>
@@ -337,5 +427,8 @@
     <MESSAGE value="   " />
     <MESSAGE value=" " />
     <option name="LAST_COMMIT_MESSAGE" value=" " />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JustFood$ip.coverage" NAME="ip Coverage Results" MODIFIED="1685805284391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

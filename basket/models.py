@@ -7,6 +7,7 @@ class Basket(models.Model):
     price = models.BigIntegerField()
     amount = models.BigIntegerField()
     order_created = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey('users.User', on_delete=models.CASCADE, related_name='basket_user')
 
     def __str__(self):
         return f'{self.food} : {self.amount}'
@@ -20,3 +21,4 @@ class Basket(models.Model):
         if not self.price:
             self.price = self.food.food_price
         return super().save(*args, **kwargs)
+

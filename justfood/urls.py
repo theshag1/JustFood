@@ -49,6 +49,7 @@ urlpatterns = [
     path('category/', include('Category.urls')),
     path('user/', include('users.urls')),
     path('pay/', include('OnlinePay.urls')),
+    path('payaction/', include('pay_action.urls')),
     path('basket/', include('basket.urls')),
 ]
 

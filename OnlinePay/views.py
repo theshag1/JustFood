@@ -2,6 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
+
+from users.models import User
 from .models import PayMethod
 from .serializer import OnlinePaySerializer, PaySerializer
 import datetime
@@ -21,11 +23,11 @@ class Paymethods(APIView):
         serializer = PaySerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = request.user
-        balance = PayMethod.objects.get(user=request.user).balance
+        balance = User.objects.get(user=request.user).balance
         amount = serializer.validated_data.get('pay_amount')
         if balance:
             balance += amount
-            PayMethod.objects.update_or_create(user=user, defaults={'balance': balance})
+            User.objects.update_or_create(user=user, defaults={'balance': balance})
             data = {'type': 'Pay successful ! ', 'pay amount': amount, 'balance': balance,
                     'time': datetime.datetime.now()}
             return Response(data)

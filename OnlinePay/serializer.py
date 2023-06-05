@@ -6,7 +6,7 @@ class OnlinePaySerializer(serializers.ModelSerializer):
     class Meta:
         model = PayMethod
         fields = ('user', 'card_type', 'card_number', 'pay_amount', 'created_at')
-        read_only_fields = ('id', 'balance')
+        read_only_fields = ('id',)
 
 
 class PaySerializer(serializers.Serializer):

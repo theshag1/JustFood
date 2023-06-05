@@ -40,7 +40,6 @@ class PayMethod(models.Model):
 
     created_at = models.DateTimeField(auto_now=True)
     pay_amount = models.BigIntegerField()
-    balance = models.BigIntegerField(null=True)
 
     def __str__(self):
-        return f'{self.user}  :   {self.pay_amount}'
+        return f'{self.user}  : {self.card_choices}'

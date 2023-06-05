@@ -26,12 +26,9 @@ class User(AbstractUser):
     first_name = models.CharField(null=True, blank=True)
     last_name = models.CharField(null=True, blank=True)
 
-    balance = models.ForeignKey('OnlinePay.PayMethod',
-                                on_delete=models.CASCADE,
-                                related_name='online_balance',
-                                null=True,
-
-                                )
+    balance = models.BigIntegerField(
+        null=True
+    )
 
     def __str__(self):
         return self.username
@@ -39,3 +36,4 @@ class User(AbstractUser):
     # def save(self, *args, **kwargs):
     #     self.password = make_password(self.password)
     #     return super().save(*args, **kwargs)
+
